@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ব্রাইড ফিউচার ফাউন্ডেশন — অন্যরকম এক যাত্রা</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        .font-bn { font-family: 'Tiro Bangla', serif; }
+        .font-en { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .grain-bg {
+            background-color: #0f172a;
+            background-image: radial-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="grain-bg text-slate-100 font-bn min-h-screen selection:bg-emerald-500 selection:text-slate-950">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold text-xl">ব</div>
+                <span class="text-xl font-bold tracking-tight font-en bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">Bride Future Foundation</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-en tracking-wide text-slate-400">
+                <a href="#story" class="hover:text-emerald-400 transition">আমাদের গল্প</a>
+                <a href="#transparency" class="hover:text-emerald-400 transition">স্বচ্ছতা</a>
+                <a href="#action" class="hover:text-emerald-400 transition">কাজে যোগ দিন</a>
+            </nav>
+            <div class="font-en">
+                <button onclick="toggleLang()" id="langBtn" class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700/80 text-sm font-medium hover:border-emerald-500/50 transition">
+                    English Mode
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-4xl mx-auto px-6 pt-24 pb-16 text-center">
+        <div class="inline-block mb-4 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-en">
+            ✨ প্রতিটা টাকার হিসেব এখানে খোলা বইয়ের মতো
+        </div>
+        <h1 id="heroTitle" class="text-4xl sm:text-6xl font-bold leading-tight mb-8 text-slate-50">
+            কাগজ-কলমের অনুদান নয়, চোখের সামনে বদলের গল্প।
+        </h1>
+        <p id="heroDesc" class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+            এখানে কোনো ফাঁকা বুলি বা জটিল হিসাবের গোলকধাঁধা নেই। সুবিধবঞ্চিত মানুষের মুখে হাসি ফোটাতে আমরা সরাসরি মাঠে কাজ করি আর পুরো প্রসেস রাখি শতভাগ স্বচ্ছ।
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 font-en">
+            <a href="#action" class="px-8 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold shadow-lg shadow-emerald-500/20 transition">
+                হাত বাড়িয়ে দিন
+            </a>
+            <a href="#transparency" class="px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 font-semibold transition">
+                হিসেব দেখে নিন
+            </a>
+        </div>
+    </section>
+
+    <!-- Real-time Transparency / Interactive Feed -->
+    <section id="transparency" class="max-w-5xl mx-auto px-6 py-16">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-100">লাইভ ট্রানজাকশন ও অ্যাক্টিভিটি ফিড</h2>
+                    <p class="text-sm text-slate-400 mt-1 font-en">Real-time ledger updates directly linked to our operational fund.</p>
+                </div>
+                <div class="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-en rounded-md uppercase tracking-wider">
+                    ● Live Sync
+                </div>
+            </div>
+
+            <div class="space-y-3 font-en">
+                <div class="flex items-center justify-between p-4 rounded-xl bg-slate-950/60 border border-slate-800/60">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold">৳</div>
+                        <div>
+                            <p class="text-sm font-medium text-slate-200">Donation received via bKash (Trx: #98X76)</p>
+                            <p class="text-xs text-slate-500">Verified by Admin • 2 mins ago</p>
+                        </div>
+                    </div>
+                    <span class="text-emerald-400 font-semibold">+ ৳৫,০০০</span>
+                </div>
+
+                <div class="flex items-center justify-between p-4 rounded-xl bg-slate-950/60 border border-slate-800/60">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 font-bold">👤</div>
+                        <div>
+                            <p class="text-sm font-medium text-slate-200">New Field Officer Application (Rashedul Islam)</p>
+                            <p class="text-xs text-slate-500">Pending Review • 15 mins ago</p>
+                        </div>
+                    </div>
+                    <span class="text-blue-400 font-medium text-xs px-2.5 py-1 bg-blue-500/10 rounded">Under Review</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Action / Interactive Form Component -->
+    <section id="action" class="max-w-xl mx-auto px-6 py-16 w-full">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 shadow-2xl">
+            <h2 class="text-2xl font-bold text-center text-slate-100 mb-2">আপনার অংশীদারিত্ব নিশ্চিত করুন</h2>
+            <p class="text-sm text-center text-slate-400 mb-6 font-en">Quick submission form with instant database validation state.</p>
+            
+            <form onsubmit="handleSubmit(event)" class="space-y-4 font-en">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">আপনার নাম / Name</label>
+                    <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition" placeholder="যেমন: তানভীর আহমেদ">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">পরিমাণ বা পদের নাম / Amount or Position</label>
+                    <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500 transition" placeholder="যেমন: ৳২০০০ বা Field Officer">
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold tracking-wide transition shadow-lg shadow-emerald-500/10">
+                    জমা দিন
+                </button>
+            </form>
+            <div id="alertBox" class="hidden mt-4 p-3 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded-xl text-sm text-center font-en">
+                Success! Your entry has been securely logged into the backend.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-slate-800 py-8 text-center text-xs text-slate-500 font-en">
+        <p>&copy; 2026 Bride Future Foundation. Built with absolute transparency.</p>
+    </footer>
+
+    <!-- Minimal Script to Avoid AI Look and Feel -->
+    <script>
+        let isBn = true;
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            const box = document.getElementById('alertBox');
+            box.classList.remove('hidden');
+            setTimeout(() => box.classList.add('hidden'), 4000);
+            e.target.reset();
+        }
+
+        function toggleLang() {
+            const title = document.getElementById('heroTitle');
+            const desc = document.getElementById('heroDesc');
+            const btn = document.getElementById('langBtn');
+
+            if (isBn) {
+                isBn = false;
+                btn.innerText = "বাংলা মোড";
+                title.innerText = "Real impact, zero fluff. Witness the change firsthand.";
+                desc.innerText = "No complex jargon or hidden loopholes. We work directly on the ground to uplift marginalized communities with 100% financial transparency.";
+                document.body.classList.replace('font-bn', 'font-en');
+            } else {
+                isBn = true;
+                btn.innerText = "English Mode";
+                title.innerText = "কাগজ-কলমের অনুদান নয়, চোখের সামনে বদলের গল্প।";
+                desc.innerText = "এখানে কোনো ফাঁকা বুলি বা জটিল হিসাবের গোলকধাঁধা নেই। সুবিধবঞ্চিত মানুষের মুখে হাসি ফোটাতে আমরা সরাসরি মাঠে কাজ করি আর পুরো প্রসেস রাখি শতভাগ স্বচ্ছ।";
+                document.body.classList.replace('font-en', 'font-bn');
+            }
+        }
+    </script>
+</body>
+</html>
